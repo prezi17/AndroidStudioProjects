@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    -<android.support.constraint.ConstraintLayout tools:context=".MainActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.045" app:layout_constraintEnd_toEndOf="parent" android:text="Your Weight" android:layout_marginTop="16dp" android:id="@+id/weightLabel"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.08" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp" android:id="@+id/weightBox" app:layout_constraintTop_toBottomOf="@+id/weightLabel" android:inputType="textPersonName" android:ems="10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.045" app:layout_constraintEnd_toEndOf="parent" android:text="Your Height" android:layout_marginTop="8dp" android:id="@+id/heightLabel" app:layout_constraintTop_toBottomOf="@+id/weightBox"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.08" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp" android:id="@+id/heightBox" app:layout_constraintTop_toBottomOf="@+id/heightLabel" android:inputType="textPersonName" android:ems="10"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:text="Compute BMI" android:layout_marginTop="8dp" android:id="@+id/button" app:layout_constraintTop_toBottomOf="@+id/heightBox" android:onClick="buttonClicked"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:text="answer" android:layout_marginTop="8dp" android:id="@+id/answer" app:layout_constraintTop_toBottomOf="@+id/button"/>
+
+</android.support.constraint.ConstraintLayout>
